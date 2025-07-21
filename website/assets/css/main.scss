@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$serif: "Times New Roman", Georgia, Times, serif;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace: Monaco, Consolas, "Lucida Console", monospace;
+
+$global-font-family: $serif;
+$header-font-family: $sans-serif;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom Styles
+.greedy-nav a {
+  color: #007833;
+}
