@@ -1,5 +1,6 @@
 # ChatHPC
 
-Placeholder repo while code is open-sourced.
+Repository for the main ChatHPC website and landing page to access the open source artifacts and documentation.
 
-Placeholder website at [https://ornl.github.io/ChatHPC/](https://ornl.github.io/ChatHPC/).
+ChatHPC Website is available at [https://ornl.github.io/ChatHPC/](https://ornl.github.io/ChatHPC/).
+
