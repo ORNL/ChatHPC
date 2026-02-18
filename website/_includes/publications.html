@@ -1,0 +1,81 @@
+{%- assign pubs = site.data.publications -%}
+
+<script>
+  // Ensure copytoclipboard is available for inline onclick handlers
+  if (typeof window.copytoclipboard === 'undefined') {
+    window.copytoclipboard = function(preId) {
+      var el = document.getElementById(preId);
+      if (!el) return;
+      var text = el.innerText || el.textContent || "";
+      if (!text.trim()) return;
+      navigator.clipboard.writeText(text).catch(function () {
+        var range = document.createRange();
+        range.selectNodeContents(el);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        document.execCommand("copy");
+        sel.removeAllRanges();
+      });
+    };
+  }
+</script>
+
+<div class="pub-list">
+  {%- for p in pubs -%}
+    <div class="pub-card">
+      <div class="pub-card__header">
+        <h3 class="pub-title">{{ p.title }}&nbsp;
+        {%- if p.badge -%}
+          <span class="pub-badge {{ p.badge_class | default: '' }}">
+            {{ p.badge }}
+          </span>
+        {%- elsif p.venue or p.year -%}
+          <span class="pub-badge {{ p.badge_class | default: '' }}">
+            {{ p.venue }}{% if p.year %} {{ p.year }}{% endif %}
+          </span>
+        {%- endif -%}
+      </h3></div>
+
+      {%- if p.authors -%}
+        <div class="pub-authors">
+          {{ p.authors | join: ", " }}
+        </div>
+      {%- endif -%}
+
+      <div class="pub-actions">
+        {%- if p.bibtex -%}
+          <button class="btn btn--primary btn--small pub-btn"
+                  type="button"
+                  data-toggle="mm-collapse"
+                  data-target="bibtex-{{ forloop.index }}"
+                  aria-expanded="false"
+                  aria-controls="bibtex-{{ forloop.index }}">
+            Cite This
+          </button>
+        {%- endif -%}
+
+        {%- if p.links.doi -%}
+          <a class="btn btn--small pub-btn" href="{{ p.links.doi }}">DOI</a>
+        {%- endif -%}
+        {%- if p.links.pdf -%}
+          <a class="btn btn--small pub-btn" href="{{ p.links.pdf }}">PDF</a>
+        {%- endif -%}
+        {%- if p.links.slides -%}
+          <a class="btn btn--small pub-btn" href="{{ p.links.slides }}">Slides</a>
+        {%- endif -%}
+      </div>
+
+      {%- if p.bibtex -%}
+        <div id="bibtex-{{ forloop.index }}" class="pub-bibtex mm-collapse" hidden>
+          <pre id="bibtex-code-{{ forloop.index }}"><code>{{ p.bibtex | escape }}</code></pre>
+          <button class="btn btn--small pub-btn"
+                  type="button"
+                  onclick="copytoclipboard('bibtex-code-{{ forloop.index }}')">
+            Copy
+          </button>
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+</div>

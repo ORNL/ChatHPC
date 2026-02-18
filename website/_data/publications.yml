@@ -1,0 +1,53 @@
+# website/_data/publications.yml
+- title: "ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem"
+  venue: "SC25"
+  year: 2025
+  badge: "SC25"
+  badge_class: "pub-badge--dark"   # optional, for styling
+  authors:
+    - "Z. Yin"
+    - "P. Valero-Lara"
+    - "A. Young"
+    - "J. S. Vetter"
+  links:
+    doi: "https://doi.org/xxxx.xxxx/xxxxxxx"
+    pdf: "https://example.com/paper.pdf"
+    slides: "https://example.com/talk.pdf"
+  bibtex: |
+    @inproceedings{chathpc_sc25,
+      title={ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem},
+      author={...},
+      booktitle={...},
+      year={2025}
+    }
+
+- title: "Another Paper Title"
+  venue: "Workshop XYZ"
+  year: 2024
+  badge: "Workshop"
+  authors: ["A. Author", "B. Author"]
+  links:
+    pdf: "/assets/pubs/another-paper.pdf"
+
+- title: "Tiling Framework for Heterogeneous Computing of Matrix-Based Tiled Algorithms"
+  venue: "PPoPP ExHET"
+  year: 2023
+  badge_class: "pub-badge--dark"   # optional, for styling
+  authors:
+    - Narasinga Rao Miniskar
+    - Mohammad Alaul Haque Monil
+    - Pedro Valero-Lara
+    - Frank Y. Liu
+    - Jeffrey S. Vetter
+  links:
+    doi: "https://doi.org/xxxx.xxxx/xxxxxxx"
+    pdf: "https://example.com/paper.pdf"
+    slides: "https://example.com/talk.pdf"
+  bibtex: |
+    @inproceedings{chathpc_sc25,
+      title={ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem},
+      author={...},
+      booktitle={...},
+      year={2025}
+    }
+
