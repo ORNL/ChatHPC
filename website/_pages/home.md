@@ -31,4 +31,6 @@ graphics:
 
 {% include publications.html %}
 
+## Collaborators
+
 {% include team.html %}
