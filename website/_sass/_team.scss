@@ -1,0 +1,45 @@
+/* Team section (no Bootstrap) */
+.mm-team {
+  margin-top: 3rem;
+}
+
+.mm-team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: .5rem;
+  align-items: start;
+}
+
+.mm-team__member {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.mm-team__link {
+  display: inline-block;
+}
+
+.mm-team__img {
+  width: 128px;
+  // height: 128px;
+  border-radius: 9999px; /* rounded-circle */
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.mm-team__name {
+  margin: 0.75rem 0 0.25rem 0;
+  font-size: 20px; /*1.12rem*/
+  line-height: 1.2;
+}
+
+.page__content .mm-team__role {
+  margin: 0 !important;
+  opacity: 0.85;
+  min-height: 1.25em; /* keeps layout stable */
+}
+
+.page__content .mm-team__role--empty {
+  opacity: 0;
+  margin: 0 !important;
+}

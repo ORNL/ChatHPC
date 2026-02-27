@@ -1,0 +1,21 @@
+<section id="team" class="mm-team">
+  <h2>Team</h2>
+
+  <div class="mm-team__grid">
+    {%- for m in site.data.team -%}
+      <div class="mm-team__member">
+        <a class="mm-team__link" href="{{ m.url }}" aria-label="{{ m.name }}">
+          <img class="mm-team__img" alt="{{ m.alt | default: m.name }}" src="{{ m.img }}">
+        </a>
+
+        <h5 class="mm-team__name">{{ m.name }}</h5>
+
+        {%- if m.role and m.role != "" -%}
+          <p class="mm-team__role">{{ m.role }}</p>
+        {%- else -%}
+          <p class="mm-team__role mm-team__role--empty"></p>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>

@@ -30,3 +30,5 @@ graphics:
 ## Publications
 
 {% include publications.html %}
+
+{% include team.html %}

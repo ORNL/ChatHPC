@@ -43,6 +43,12 @@
         </div>
       {%- endif -%}
 
+      {%- if p.venue -%}
+        <div class="pub-venue">
+          {{ p.venue }}
+        </div>
+      {%- endif -%}
+
       <div class="pub-actions">
         {%- if p.bibtex -%}
           <button class="btn btn--primary btn--small pub-btn"
@@ -62,7 +68,7 @@
           <a class="btn btn--small pub-btn" href="{{ p.links.pdf }}">PDF</a>
         {%- endif -%}
         {%- if p.links.slides -%}
-          <a class="btn btn--small pub-btn" href="{{ p.links.slides }}">Slides</a>
+          <a class="btn btn--small pub-btn" href="{{ p.links.slides | relative_url }}">Slides</a>
         {%- endif -%}
       </div>
 
