@@ -2,7 +2,7 @@
 - title: "ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem"
   venue: "SC '25: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
   year: 2025
-  badge: "SC'25"
+  badge: "SC25"
   badge_class: "pub-badge--dark"   # optional, for styling
   authors:
     - "Pedro Valero Lara"
@@ -72,4 +72,270 @@
       location = {
       },
       series = {SCA/HPCAsia '26}
+    }
+
+- title: "Leveraging AI for Productive and Trustworthy HPC Software: Challenges and Research Directions"
+  venue: "ISC High Performance 2025 International Workshops"
+  year: 2025
+  badge: "ISC High Performance 2025"
+  authors:
+    - "Keita Teranishi"
+    - "Harshitha Menon"
+    - "William F. Godoy"
+    - "Prasanna Balaprakash"
+    - "David Bau"
+    - "Tal Ben-Nun"
+    - "Abhinav Bhatele"
+    - "Franz Franchetti"
+    - "Michael Franusich"
+    - "Todd Gamblin"
+    - "Giorgis Georgakoudis"
+    - "Tom Goldstein"
+    - "Arjun Guha"
+    - "Steven E. Hahn"
+    - "Costin Iancu"
+    - "Zheming Jin"
+    - "Terry Jones"
+    - "Tze-Meng Low"
+    - "Het Mankad"
+    - "Narasinga Rao Miniskar"
+    - "Mohammad Alaul Haque Monil"
+    - "Daniel Nichols"
+    - "Konstantinos Parasyris"
+    - "Swaroop Pophale"
+    - "Pedro Valero-Lara"
+    - "Jeffrey S. Vetter"
+    - "Samuel Williams"
+    - "Aaron Young"
+  links:
+    doi: "https://doi.org/10.1007/978-3-032-07612-0_47"
+    pdf: "https://link.springer.com/content/pdf/10.1007/978-3-032-07612-0.pdf"
+  bibtex: |
+    @InProceedings{10.1007/978-3-032-07612-0_47,
+      author="Teranishi, Keita
+      and Menon, Harshitha
+      and Godoy, William F.
+      and Balaprakash, Prasanna
+      and Bau, David
+      and Ben-Nun, Tal
+      and Bhatele, Abhinav
+      and Franchetti, Franz
+      and Franusich, Michael
+      and Gamblin, Todd
+      and Georgakoudis, Giorgis
+      and Goldstein, Tom
+      and Guha, Arjun
+      and Hahn, Steven E.
+      and Iancu, Costin
+      and Jin, Zheming
+      and Jones, Terry
+      and Low, Tze-Meng
+      and Mankad, Het
+      and Miniskar, Narasinga Rao
+      and Monil, Mohammad Alaul Haque
+      and Nichols, Daniel
+      and Parasyris, Konstantinos
+      and Pophale, Swaroop
+      and Valero-Lara, Pedro
+      and Vetter, Jeffrey S.
+      and Williams, Samuel
+      and Young, Aaron",
+      editor="Neuwirth, Sarah
+      and Paul, Arnab Kumar
+      and Weinzierl, Tobias
+      and Carson, Erin Claire",
+      title="Leveraging AI for Productive and Trustworthy HPC Software: Challenges and Research Directions",
+      booktitle="High Performance Computing",
+      year="2026",
+      publisher="Springer Nature Switzerland",
+      address="Cham",
+      pages="615--625",
+      abstract="We discuss the challenges and propose research directions for using AI to revolutionize the development of high-performance computing (HPC) software. AI technologies, in particular large language models, have transformed every aspect of software development. For its part, HPC software is recognized as a highly specialized scientific field of its own. We discuss the challenges associated with leveraging state-of-the-art AI technologies to develop such a unique and niche class of software and outline our research directions in the two US Department of Energy--funded projects for advancing HPC Software via AI: Ellora and Durban.",
+      isbn="978-3-032-07612-0"
+    }
+
+- title: "LLM-Driven Fortran-to-C/C++ Portability for Parallel Scientific Codes"
+  venue: "2025 IEEE International Conference on eScience"
+  year: 2025
+  badge: "eScience 2025"
+  authors:
+    - "Pedro Valero-Lara"
+    - "William F. Godoy"
+    - "Jose Gonzalez"
+    - "Alexis Huante"
+    - "Hallyma Gauthier-Chaparro"
+    - "Jhonny Gonzalez"
+  links:
+    doi: "https://doi.org/10.1109/eScience65000.2025.00083"
+    pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11181523"
+  bibtex: |
+    @INPROCEEDINGS{11181523,
+      author={Valero-Lara, Pedro and Godoy, William F. and Gonzalez, Jose and Huante, Alexis and Gauthier-Chaparro, Hallyma and Gonzalez, Jhonny and Tang, Yuguo Kelly and Teranishi, Keita and Vetter, Jeffrey S.},
+      booktitle={2025 IEEE International Conference on eScience (eScience)},
+      title={LLM-Driven Fortran-to-C/C++ Portability for Parallel Scientific Codes},
+      year={2025},
+      volume={},
+      number={},
+      pages={385-394},
+      abstract={We define the fundamental practices and criteria for evaluating and using the Meta Llama 3 and OpenAI ChatGPT 3.5 and 4o large language models (LLMs) to translate parallel scientific Fortran + OpenMP and Fortran + OpenACC codes to C/C++ codes that can leverage vendor-specific libraries (CUDA, HIP) for GPU acceleration in addition to other performance-portable programming models (e.g., Kokkos, OpenMP, OpenACC). In this study, LLMs are used to translate 11 different parallel Fortran codes with some of the most popular and widely used kernels/proxies in high-performance computing (HPC): AXPY, GEMV, GEMM, Jacobi, SpMV, and the >200-line Hartree-Fock application proxy, which implements a solver for quantum many-body systems. In all, we analyze the correctness and reproducibility of more than 1,650 AI-generated parallel C/C++ codes. Additionally, we evaluate the performance of Fortran codes and AI-generated C/C++ codes on two modern HPC architectures—one AMD EPYC Rome CPU with 64 cores and one NVIDIA Ampere A100 GPU. We use multi-modal prompting and fine-tuning techniques for LLMs to produce parallel scientific C/C++ codes with high levels of correctness (more than 95% of the codes are well ported) and speedups of up to an order of magnitude versus Fortran + OpenMP and Fortran + OpenACC codes on the same system.},
+      keywords={Jacobian matrices;Codes;Translation;Parallel programming;Biological system modeling;Large language models;Graphics processing units;Chatbots;Reproducibility of results;Hip;AI;Large Language Models;Parallel Programming;Fortran;C/C++;OpenMP;OpenACC;CUDA;HIP;Kokkos},
+      doi={10.1109/eScience65000.2025.00083},
+      ISSN={2325-3703},
+      month={Sep.},
+    }
+
+- title: "Enhancing ChatPORT with CUDA-to-SYCL Kernel Translation Capability"
+  venue: "SC Workshops '25: Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+  year: 2025
+  badge: "SC25-W"
+  authors:
+    - "Zheming Jin"
+    - "Swaroop Pophale"
+    - "Keita Teranishi"
+  links:
+    doi: "https://doi.org/10.1145/3731599.3767398"
+    pdf: "https://dl.acm.org/doi/pdf/10.1145/3731599.3767398"
+  bibtex: |
+    @inproceedings{10.1145/3731599.3767398,
+      author = {Jin, Zheming and Pophale, Swaroop and Teranishi, Keita},
+      title = {Enhancing ChatPORT with CUDA-to-SYCL Kernel Translation Capability},
+      year = {2025},
+      isbn = {9798400718717},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3731599.3767398},
+      doi = {10.1145/3731599.3767398},
+      abstract = {Large Language Models (LLMs) have shown strong capabilities in general code translation. However, code translation involving parallel programming models remains largely unexplored. This work enhances the capabilities of code LLMs in CUDA-to-SYCL kernel translation with parameter-efficient fine-tuning. The resultant fine-tuned LLM, called ChatPORT, is an effort to provide high-fidelity translations from one programming model to another. We describe the preparation of datasets from heterogeneous computing benchmarks for model fine-tuning and testing, the parameter-efficient fine-tuning of 19 open-source code models ranging in size from 0.5 to 34 billion parameters and evaluate the correctness rates of the SYCL kernels by the fine-tuned models. The experimental results show that most code models fail to translate CUDA codes to SYCL correctly. However, fine-tuning these models using a small set of CUDA and SYCL kernels can enhance the capabilities of these models in kernel translation. Depending on the sizes of the models, the correctness rate ranges from 19.9\% to 81.7\% for a test dataset of 62 CUDA kernels.},
+      booktitle = {Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+      pages = {524–533},
+      numpages = {10},
+      keywords = {CUDA, Code Translation, Generative Artificial Intelligence, Large Language Models, SYCL, Software Development},
+      location = {
+      },
+      series = {SC Workshops '25}
+    }
+
+- title: "Large language model evaluation for high-performance computing software development"
+  venue: "Concurrency and Computation Practics and Experience"
+  year: 2024
+  badge: "Special Issue"
+  authors:
+    - "William F. Godoy"
+    - "Pedro Valero-Lara"
+    - "Keita Teranishi"
+    - "Prasanna Balaprakash"
+    - "Jeffrey S. Vetter"
+  links:
+    doi: "https://doi.org/10.1002/cpe.8269"
+    pdf: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/cpe.8269"
+  bibtex: |
+    @article{https://doi.org/10.1002/cpe.8269,
+      author = {Godoy, William F. and Valero-Lara, Pedro and Teranishi, Keita and Balaprakash, Prasanna and Vetter, Jeffrey S.},
+      title = {Large language model evaluation for high-performance computing software development},
+      journal = {Concurrency and Computation: Practice and Experience},
+      volume = {36},
+      number = {26},
+      pages = {e8269},
+      keywords = {auto-parallelization, code generation, GPT, high-performance computing, large language model, programming models},
+      doi = {https://doi.org/10.1002/cpe.8269},
+      url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.8269},
+      eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.8269},
+      abstract = {Abstract We apply AI-assisted large language model (LLM) capabilities of GPT-3 targeting high-performance computing (HPC) kernels for (i) code generation, and (ii) auto-parallelization of serial code in C ++, Fortran, Python and Julia. Our scope includes the following fundamental numerical kernels: AXPY, GEMV, GEMM, SpMV, Jacobi Stencil, and CG, and language/programming models: (1) C++ (e.g., OpenMP [including offload], OpenACC, Kokkos, SyCL, CUDA, and HIP), (2) Fortran (e.g., OpenMP [including offload] and OpenACC), (3) Python (e.g., numpy, Numba, cuPy, and pyCUDA), and (4) Julia (e.g., Threads, CUDA.jl, AMDGPU.jl, and KernelAbstractions.jl). Kernel implementations are generated using GitHub Copilot capabilities powered by the GPT-based OpenAI Codex available in Visual Studio Code given simple <kernel> + <programming model> + <optional hints> prompt variants. To quantify and compare the generated results, we propose a proficiency metric around the initial 10 suggestions given for each prompt. For auto-parallelization, we use ChatGPT interactively giving simple prompts as in a dialogue with another human including simple “prompt engineering” follow ups. Results suggest that correct outputs for C++ correlate with the adoption and maturity of programming models. For example, OpenMP and CUDA score really high, whereas HIP is still lacking. We found that prompts from either a targeted language such as Fortran or the more general-purpose Python can benefit from adding language keywords, while Julia prompts perform acceptably well for its Threads and CUDA.jl programming models. We expect to provide an initial quantifiable point of reference for code generation in each programming model using a state-of-the-art LLM. Overall, understanding the convergence of LLMs, AI, and HPC is crucial due to its rapidly evolving nature and how it is redefining human-computer interactions.},
+      year = {2024}
+    }
+
+- title: "ChatBLAS: The First AI-Generated and Portable BLAS Library"
+  venue: "SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+  year: 2024
+  badge: "SC24-W"
+  authors:
+    - "Pedro Valero-Lara"
+    - "William F. Godoy"
+    - "Keita Teranishi"
+    - "Prasanna Balaprakash"
+    - "Jeffrey S. Vetter"
+  links:
+    doi: "https://doi.org/10.1109/SCW63240.2024.00010"
+    pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10820659"
+  bibtex: |
+    @INPROCEEDINGS{10820659,
+      author={Valero-Lara, Pedro and Godoy, William F. and Teranishi, Keita and Balaprakash, Prasanna and Vetter, Jeffrey S.},
+      booktitle={SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+      title={ChatBLAS: The First AI-Generated and Portable BLAS Library},
+      year={2024},
+      volume={},
+      number={},
+      pages={19-24},
+      abstract={We present ChatBLAS, the first AI-generated and portable Basic Linear Algebra Subprograms (BLAS) library on different CPU/GPU configurations. The purpose of this study is (i) to evaluate the capabilities of current large language models (LLMs) to generate a portable and HPC library for BLAS operations and (ii) to define the fundamental practices and criteria to interact with LLMs for HPC targets to elevate the trustworthiness and performance levels of the AI-generated HPC codes. The generated C/C++ codes must be highly optimized using device-specific solutions to reach high levels of performance. Additionally, these codes are very algorithm-dependent, thereby adding an extra dimension of complexity to this study. We used OpenAI’s LLM ChatGPT and focused on vector-vector BLAS level-1 operations. ChatBLAS can generate functional and correct codes, achieving high-trustworthiness levels, and can compete or even provide better performance against vendor libraries.},
+      keywords={Performance evaluation;Codes;Large language models;High performance computing;Linear algebra;Programming;Libraries;System-on-chip;Prompt engineering;Hip;Julia;JACC;metaprogramming;performance portability;high-bandwidth on-chip memory},
+      doi={10.1109/SCW63240.2024.00010},
+      ISSN={},
+      month={Nov},
+    }
+
+- title: "Comparing Llama-2 and GPT-3 LLMs for HPC Kernels Generation"
+  venue: "Languages and Compilers for Parallel Computing"
+  year: 2023
+  badge: "LCPC'23"
+  authors:
+    - "Pedro Valero-Lara"
+    - "Alexis Huante"
+    - "Mustafa Al Lail"
+    - "William F. Godoy"
+    - "Keita Teranishi"
+    - "Prasanna Balaprakash"
+    - "Jeffrey S. Vetter"
+  links:
+    doi: "https://doi.org/10.1007/978-3-032-02436-7_2"
+    pdf: "https://link.springer.com/content/pdf/10.1007/978-3-032-02436-7.pdf"
+  bibtex: |
+    @InProceedings{10.1007/978-3-032-02436-7_2,
+      author="Valero-Lara, Pedro
+      and Huante, Alexis
+      and Al Lail, Mustafa
+      and Godoy, William F.
+      and Teranishi, Keita
+      and Balaprakash, Prasanna
+      and Vetter, Jeffrey S.",
+      editor="Dietz, Henry",
+      title="Comparing Llama-2 and GPT-3 LLMs for HPC Kernels Generation",
+      booktitle="Languages and Compilers for Parallel Computing",
+      year="2026",
+      publisher="Springer Nature Switzerland",
+      address="Cham",
+      pages="20--32",
+      abstract="We evaluate the use of the open-source Llama-2 model for generating well-known, high-performance computing kernels (e.g., AXPY, GEMV, GEMM) on different parallel programming models and languages (e.g., C++: OpenMP, OpenMP Offload, OpenACC, CUDA, HIP; Fortran: OpenMP, OpenMP Offload, OpenACC; Python: numpy, Numba, pyCUDA, cuPy; and Julia: Threads, CUDA.jl, AMDGPU.jl). We built upon our previous work that is based on the OpenAI Codex, which is a descendant of GPT-3, to generate similar kernels with simple prompts via GitHub Copilot. Our goal is to compare the accuracy of Llama-2 and our original GPT-3 baseline by using a similar metric. Llama-2 has a simplified model that shows competitive or even superior accuracy. We also report on the differences between these foundational large language models as generative AI continues to redefine human-computer interactions. Overall, Copilot generates codes that are more reliable but less optimized, whereas codes generated by Llama-2 are less reliable but more optimized when correct.",
+      isbn="978-3-032-02436-7"
+    }
+
+- title: "Evaluation of OpenAI Codex for HPC Parallel Programming Models Kernel Generation"
+  venue: "ICPP Workshops '23: Proceedings of the 52nd International Conference on Parallel Processing Workshops"
+  year: 2023
+  badge: "ICPP Workshops'23"
+  authors:
+    - "William Godoy"
+    - "Pedro Valero-Lara"
+    - "Keita Teranishi"
+    - "Prasanna Balaprakash"
+    - "Jeffrey Vetter"
+  links:
+    doi: "https://dl.acm.org/doi/10.1145/3605731.3605886"
+    pdf: "https://dl.acm.org/doi/pdf/10.1145/3605731.3605886"
+  bibtex: |
+    @inproceedings{10.1145/3605731.3605886,
+      author = {Godoy, William and Valero-Lara, Pedro and Teranishi, Keita and Balaprakash, Prasanna and Vetter, Jeffrey},
+      title = {Evaluation of OpenAI Codex for HPC Parallel Programming Models Kernel Generation},
+      year = {2023},
+      isbn = {9798400708428},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3605731.3605886},
+      doi = {10.1145/3605731.3605886},
+      abstract = {We evaluate AI-assisted generative capabilities on fundamental numerical kernels in high-performance computing (HPC), including AXPY, GEMV, GEMM, SpMV, Jacobi Stencil, and CG. We test the generated kernel codes for a variety of language-supported programming models, including (1) C++ (e.g., OpenMP [including offload], OpenACC, Kokkos, SyCL, CUDA, and HIP), (2) Fortran (e.g., OpenMP [including offload] and OpenACC), (3) Python (e.g., numpy, Numba, cuPy, and pyCUDA), and (4) Julia (e.g., Threads, CUDA.jl, AMDGPU.jl, and KernelAbstractions.jl). We use the GitHub Copilot capabilities powered by the GPT-based OpenAI Codex available in Visual Studio Code as of April 2023 to generate a vast amount of implementations given simple <kernel> + <programming model> + <optional hints> prompt variants. To quantify and compare the results, we propose a proficiency metric around the initial 10 suggestions given for each prompt. Results suggest that the OpenAI Codex outputs for C++ correlate with the adoption and maturity of programming models. For example, OpenMP and CUDA score really high, whereas HIP is still lacking. We found that prompts from either a targeted language such as Fortran or the more general-purpose Python can benefit from adding code keywords, while Julia prompts perform acceptably well for its mature programming models (e.g., Threads and CUDA.jl). We expect for these benchmarks to provide a point of reference for each programming model’s community. Overall, understanding the convergence of large language models, AI, and HPC is crucial due to its rapidly evolving nature and how it is redefining human-computer interactions.},
+      booktitle = {Proceedings of the 52nd International Conference on Parallel Processing Workshops},
+      pages = {136–144},
+      numpages = {9},
+      keywords = {GPT, GitHub Copilot, HPC, LLM, OpenAI Codex, generative AI, high-performance computing, large language models, numerical kernels, programming models},
+      location = {Salt Lake City, UT, USA},
+      series = {ICPP Workshops '23}
     }
