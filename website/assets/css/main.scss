@@ -15,6 +15,9 @@ $header-font-family: $sans-serif;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+@import "publications";
+@import "team";
+
 // Custom Styles
 .greedy-nav a {
   color: #007833;

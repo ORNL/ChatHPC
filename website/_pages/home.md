@@ -26,3 +26,9 @@ graphics:
     btn_label: "GitHub Repo"
     btn_class: "btn--info"
 ---
+
+## Publications
+
+{% include publications.html %}
+
+{% include team.html %}
