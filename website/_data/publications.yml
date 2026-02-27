@@ -2,7 +2,7 @@
 - title: "ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem"
   venue: "SC '25: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
   year: 2025
-  badge: "SC25"
+  badge: "SC'25"
   badge_class: "pub-badge--dark"   # optional, for styling
   authors:
     - "Pedro Valero Lara"
@@ -40,7 +40,7 @@
 - title: "ChatMPI: LLM-Driven MPI Code Generation for HPC Workloads"
   venue: "SCA/HPCAsia '26: Proceedings of the Supercomputing Asia and International Conference on High Performance Computing in Asia Pacific Region"
   year: 2026
-  badge: "SCA/HPCAsia"
+  badge: "SCA/HPCAsia'26"
   authors:
     - "Pedro Valero-Lara"
     - "Aaron Young"
