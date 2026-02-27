@@ -243,6 +243,142 @@ Contained in this repo is the ChatHPC Library and corresponding CLI application 
 </div>
 
 
+<h2 id="publications">Publications</h2>
+
+<script>
+  // Ensure copytoclipboard is available for inline onclick handlers
+  if (typeof window.copytoclipboard === 'undefined') {
+    window.copytoclipboard = function(preId) {
+      var el = document.getElementById(preId);
+      if (!el) return;
+      var text = el.innerText || el.textContent || "";
+      if (!text.trim()) return;
+      navigator.clipboard.writeText(text).catch(function () {
+        var range = document.createRange();
+        range.selectNodeContents(el);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        document.execCommand("copy");
+        sel.removeAllRanges();
+      });
+    };
+  }
+</script>
+
+<div class="pub-list"><div class="pub-card">
+      <div class="pub-card__header">
+        <h3 class="pub-title">ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem&nbsp;<span class="pub-badge pub-badge--dark">
+            SC'25
+          </span></h3></div><div class="pub-authors">
+          Pedro Valero Lara, Aaron Young, Jeffrey S. Vetter, Zheming Jin, Swaroop Pophale, Mohammad Alaul Haque Monil, Keita Teranishi, William F. Godoy
+        </div><div class="pub-venue">
+          SC '25: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis
+        </div><div class="pub-actions"><button class="btn btn--primary btn--small pub-btn" type="button" data-toggle="mm-collapse" data-target="bibtex-1" aria-expanded="false" aria-controls="bibtex-1">
+            Cite This
+          </button><a class="btn btn--small pub-btn" href="https://doi.org/10.1145/3712285.3759787">DOI</a><a class="btn btn--small pub-btn" href="https://dl.acm.org/doi/pdf/10.1145/3712285.3759787">PDF</a><a class="btn btn--small pub-btn" href="/ChatHPC/assets/pdf/ChatHPC-SC25.pdf">Slides</a></div><div id="bibtex-1" class="pub-bibtex mm-collapse" hidden="">
+          <pre id="bibtex-code-1"><code>@inproceedings{10.1145/3712285.3759787,
+  author = {Valero Lara, Pedro and Young, Aaron and Vetter, Jeffrey S. and Jin, Zheming and Pophale, Swaroop and Alaul Haque Monil, Mohammad and Teranishi, Keita and Godoy, William F.},
+  title = {ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem},
+  year = {2025},
+  isbn = {9798400714665},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3712285.3759787},
+  doi = {10.1145/3712285.3759787},
+  abstract = {ChatHPC democratizes large language models for the high-performance computing (HPC) community by providing the infrastructure, ecosystem, and knowledge needed to apply modern generative AI technologies to rapidly create specific capabilities for critical HPC components while using relatively modest computational resources. Our divide-and-conquer approach focuses on creating a collection of reliable, highly specialized, and optimized AI assistants for HPC based on the cost-effective and fast Code Llama fine-tuning processes and expert supervision. We target major components of the HPC software stack, including programming models, runtimes, I/O, tooling, and math libraries. Thanks to AI, ChatHPC provides a more productive HPC ecosystem by boosting important tasks related to portability, parallelization, optimization, scalability, and instrumentation, among others. With relatively small datasets (on the order of KB), the AI assistants, which are created in a few minutes by using one node with two NVIDIA H100 GPUs and the ChatHPC library, can create new capabilities with Meta’s 7-billion parameter Code Llama base model to produce high-quality software with a level of trustworthiness of up to 90\% higher than the 1.8-trillion parameter OpenAI ChatGPT-4o model for critical programming tasks in the HPC software stack.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages = {458–474},
+  numpages = {17},
+  keywords = {Large Language Models, Productivity, Trustworthiness, High Performance Computing.},
+  location = {
+  },
+  series = {SC &#39;25}
+}
+</code></pre>
+          <button class="btn btn--small pub-btn" type="button" onclick="copytoclipboard('bibtex-code-1')">
+            Copy
+          </button>
+        </div></div><div class="pub-card">
+      <div class="pub-card__header">
+        <h3 class="pub-title">ChatMPI: LLM-Driven MPI Code Generation for HPC Workloads&nbsp;<span class="pub-badge ">
+            SCA/HPCAsia'26
+          </span></h3></div><div class="pub-authors">
+          Pedro Valero-Lara, Aaron Young, Thomas Naughton III, Christian Engelmann, Al Geist, Jeffrey S. Vetter, Keita Teranishi, William F. Godoy
+        </div><div class="pub-venue">
+          SCA/HPCAsia '26: Proceedings of the Supercomputing Asia and International Conference on High Performance Computing in Asia Pacific Region
+        </div><div class="pub-actions"><button class="btn btn--primary btn--small pub-btn" type="button" data-toggle="mm-collapse" data-target="bibtex-2" aria-expanded="false" aria-controls="bibtex-2">
+            Cite This
+          </button><a class="btn btn--small pub-btn" href="https://doi.org/10.1145/3773656.3773659">DOI</a><a class="btn btn--small pub-btn" href="https://dl.acm.org/doi/pdf/10.1145/3773656.3773659">PDF</a><a class="btn btn--small pub-btn" href="/ChatHPC/assets/pdf/ChatMPI-SCA-HPCAsia26.pdf">Slides</a></div><div id="bibtex-2" class="pub-bibtex mm-collapse" hidden="">
+          <pre id="bibtex-code-2"><code>@inproceedings{10.1145/3773656.3773659,
+  author = {Valero-Lara, Pedro and Young, Aaron and Naughton III, Thomas and Engelmann, Christian and Geist, Al and Vetter, Jeffrey S. and Teranishi, Keita and Godoy, William F.},
+  title = {ChatMPI: LLM-Driven MPI Code Generation for HPC Workloads},
+  year = {2026},
+  isbn = {9798400720673},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3773656.3773659},
+  doi = {10.1145/3773656.3773659},
+  abstract = {The Message Passing Interface (MPI) standard plays a crucial role in enabling scientific applications for parallel computing and is an essential component in high-performance computing (HPC). However, implementing MPI code manually—especially applying a proper domain decomposition and communication pattern—is a challenging and error-prone task. We present ChatMPI, an AI assistant for MPI parallelization of sequential C codes. In our analysis, we focus on testing six essential HPC workloads, which are based on Basic Linear Algebra Subprograms levels 1, 2, and 3 as well as sparse, stencil, and iterative operations. We analyze the process of creating ChatMPI by using the ChatHPC library. This lightweight large language model (LLM)–based infrastructure enables HPC experts to efficiently create and supervise trustworthy AI capabilities for critical HPC software tasks. We study the data required for training (fine-tuning) ChatMPI to generate parallel codes that not only use MPI syntax correctly but also apply HPC techniques to reduce memory communication and maximize performance by using proper work decomposition. With a relatively small training dataset composed of a few dozen prompts and fewer than 15 minutes of fine-tuning on one node equipped with two NVIDIA H100 GPUs, ChatMPI elevates trustworthiness for MPI code generation of current LLMs (e.g., Code Llama, ChatGPT-4o and ChatGPT 5). Additionally, we evaluate the performance of the MPI codes generated by ChatMPI in comparison with the ones generated by ChatGPT-4o and ChatGPT-5. The codes generated by ChatMPI provide up to a 4 \texttimes{} boost in performance by using better problem decomposition, communication patterns, and HPC techniques (e.g., communication avoiding).},
+  booktitle = {Proceedings of the Supercomputing Asia and International Conference on High Performance Computing in Asia Pacific Region},
+  pages = {19–30},
+  numpages = {12},
+  keywords = {ChatHPC, AI, LLM, MPI, HPC},
+  location = {
+  },
+  series = {SCA/HPCAsia &#39;26}
+}
+</code></pre>
+          <button class="btn btn--small pub-btn" type="button" onclick="copytoclipboard('bibtex-code-2')">
+            Copy
+          </button>
+        </div></div></div>
+
+<section id="team" class="mm-team">
+  <h2>Team</h2>
+
+  <div class="mm-team__grid"><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/geekdude" aria-label="Aaron Young">
+          <img class="mm-team__img" alt="Aaron" src="https://gravatar.com/avatar/cdfc3774451a8ee9013e93a1d3d77143bad55d52056eb961339962ba565b2cbc?s=302" />
+        </a>
+
+        <h5 class="mm-team__name">Aaron Young</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/pedrovalerolara" aria-label="Pedro Valero-Lara">
+          <img class="mm-team__img" alt="Pedro" src="https://avatars.githubusercontent.com/pedrovalerolara" />
+        </a>
+
+        <h5 class="mm-team__name">Pedro Valero-Lara</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/monil01" aria-label="Mohammad Alaul Haque Monil">
+          <img class="mm-team__img" alt="Mohammad" src="https://avatars.githubusercontent.com/monil01" />
+        </a>
+
+        <h5 class="mm-team__name">Mohammad Alaul Haque Monil</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/zjin-lcf" aria-label="Zheming Jin">
+          <img class="mm-team__img" alt="Zheming" src="https://avatars.githubusercontent.com/zjin-lcf" />
+        </a>
+
+        <h5 class="mm-team__name">Zheming Jin</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/spophale" aria-label="Swaroop Pophale">
+          <img class="mm-team__img" alt="Swaroop" src="https://avatars.githubusercontent.com/spophale" />
+        </a>
+
+        <h5 class="mm-team__name">Swaroop Pophale</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/williamfgc" aria-label="William F. Godoy">
+          <img class="mm-team__img" alt="William" src="https://avatars.githubusercontent.com/williamfgc" />
+        </a>
+
+        <h5 class="mm-team__name">William F. Godoy</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/keitaTN" aria-label="Keita Teranishi">
+          <img class="mm-team__img" alt="Keita" src="https://avatars.githubusercontent.com/keitaTN" />
+        </a>
+
+        <h5 class="mm-team__name">Keita Teranishi</h5><p class="mm-team__role mm-team__role--empty"></p></div><div class="mm-team__member">
+        <a class="mm-team__link" href="https://github.com/vetter" aria-label="Jeffrey S. Vetter">
+          <img class="mm-team__img" alt="Jeffrey" src="https://avatars.githubusercontent.com/vetter" />
+        </a>
+
+        <h5 class="mm-team__name">Jeffrey S. Vetter</h5><p class="mm-team__role mm-team__role--empty"></p></div></div>
+</section>
 
 
 
@@ -307,6 +443,10 @@ Contained in this repo is the ChatHPC Library and corresponding CLI application 
 
 
 
+
+  
+    <script src="/ChatHPC/assets/js/mm-collapse.js"></script>
+  
 
 
 
